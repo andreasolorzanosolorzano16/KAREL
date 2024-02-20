@@ -1,0 +1,19 @@
+class program {
+void dejaSiEsCero(n) {
+   if ( iszero(n) ) {
+      pickbeeper();
+   }
+   else 
+   putbeeper(); 
+ 
+   }
+
+    program () {
+    //Define una nueva instrucción que haga
+    //que Karel ponga "n" zumbadores en donde
+     //se encuentra, pero si "n" es cero, recoja
+    // 1 zumbador.
+        dejaSiEsCero(0);
+        turnoff();
+    }
+}

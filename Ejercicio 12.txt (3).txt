@@ -1,0 +1,48 @@
+class program {
+void turnrinht(){
+  turnleft();
+  turnleft();
+  turnleft();
+}
+void posicionarse() {
+   turnrinht();
+   move();
+   move();
+   turnleft();
+}
+void desplazamiento_V() {
+ if (frontIsClear) {
+ move();
+ desplazamiento_V();
+ if (frontIsBlocked && nextToABeeper) {
+ pickbeeper();
+ turnleft();
+ turnleft();
+ move();
+ }
+ //turnleft();
+ move();
+ }}
+ void desplazamiento_H() {
+ if (frontIsClear) {
+ move();
+ desplazamiento_H();
+ if (facingNorth) {
+  turnrinht();
+  move();
+  }
+  else
+  move();
+  }
+  else {
+  turnleft();
+  desplazamiento_V();
+  }
+  }
+    program () {
+        // TODO poner codigo aqui
+        posicionarse();
+        desplazamiento_H();
+        turnoff();
+    }
+}

@@ -1,0 +1,22 @@
+class program {
+void turnright(){
+ turnleft();
+ turnleft();
+ turnleft();
+ }
+    program () {
+        iterate (14)
+        {
+        if(nextToABeeper){
+        pickbeeper();
+        }
+        else{
+        turnright();
+        move();   
+        turnleft();
+        move(); 
+       }
+       }
+        turnoff();
+    }
+}

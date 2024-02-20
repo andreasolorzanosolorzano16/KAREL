@@ -1,0 +1,21 @@
+class program {
+void sigueMuroDerecha() {
+move();
+if(frontIsBlocked){
+turnleft();
+}
+}
+void turnright
+
+    program () {
+    sigueMuroDerecha();
+    
+    turnleft();
+    turnleft();
+    turnleft();
+        
+       
+        turnoff();
+        
+    }
+}
